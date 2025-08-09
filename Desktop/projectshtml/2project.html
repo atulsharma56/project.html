@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2card</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            background-color: rgba(72, 132, 196, 0.59);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .card{
+            width:400px;
+            height:600px;
+            background-color: white;
+            border-radius: 20px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            
+            gap:25px;
+
+
+        }
+        .card img{
+           width:100%;
+           height:30%;
+           border-top-left-radius: 20px;
+           border-top-right-radius: 20px;
+           
+        
+        }
+        .textbox{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            gap:25px;
+           width:70%;
+        }
+        .box{
+            width:80%;
+            height:10%;
+            background-color: antiquewhite;
+            border-radius: 20px;
+            display:flex;
+           justify-content: space-between;
+
+        }
+
+        .leftbox{
+            width:fit-content;
+            display: flex;
+            gap:30px;
+            align-items: center;
+            padding:20px;
+        }
+        #imagebox{
+            width:30px;
+            height:40px;
+        }
+
+        .rightbox{
+            display:flex;
+            align-items: center;
+            padding:20px;
+
+        }
+       #paymentbutton{
+           width:80%;
+            height:9%;
+            background-color:rgb(16, 12, 239);
+            color:white;
+            font-size: 1.2rem;
+            border-radius: 15px;
+            box-shadow: 0px 8px 8px rgb(180, 177, 177);
+       }
+       .cancelbox a{
+        text-decoration:none;
+        color: rgb(10, 10, 9);
+        font-weight: bold;
+        font-size: large;
+
+       }
+       
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="atul.jpeg" alt="">
+            <div class="textbox">
+                <h1>Order summary</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis beatae recusandae, voluptatem cupiditate sapiente explicabo!</p>
+        </div>
+        <div class="box">
+            <div class="leftbox">
+                <img  id="imagebox" src="music .jpg" alt="">
+                <div class="textarea">
+                    <p>Amount</p>
+                    <p>$99.9/year</p>
+                </div>
+
+            </div>
+            <div class="rightbox">
+                <a href="#">Change</a>
+            </div>
+            
+            
+        </div>
+        <button id="paymentbutton"> 
+            Proceed for payment
+        </button>
+       <div class="cancelbox">
+        <a href="#">Cancel order</a>
+       </div>
+
+
+        
+
+            </div>
+            
+        </div>
+   
+
+
+   
+</body>
+</html>
